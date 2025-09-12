@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fff;
+}
+
+.header img {
+    width: 150px;
+    height: auto;
+}
+
+.nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid transparent;
+    /* invisible par défaut */
+    display: inline-block;
+    /* pour pouvoir transformer la ligne si besoin */
+    transform: translateY(-6px);
+    /* remonte légèrement la barre */
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav a:hover {
+    border-bottom-color: #000;
+}
