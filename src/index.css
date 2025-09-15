@@ -19,25 +19,17 @@ a {
   text-decoration: inherit;
 }
 
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
-  /* Header / main / Footer empilés verticalement */
   min-height: 100vh;
-  /* occupe toute la hauteur de la fenêtre */
 }
 
 main {
   flex: 1;
-  /* prend tout l’espace restant */
   padding: 2rem;
-  /* optionnel : marge intérieure */
 }
 
 h1 {

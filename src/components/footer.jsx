@@ -1,12 +1,11 @@
-import styles from './footer.module.css';
-import logoFooter from '../assets/logofooter.svg';
+import styles from "./footer.module.css";
+import logoFooter from "../assets/logofooter.svg";
 
 const Footer = () => (
-    <footer className={styles.footer}>
-        <img src={logoFooter} alt="Kasa logo footer" width={150} height={40} />
-        <p>© 2025 Kasa. Tous droits réservés</p>
-    </footer>
+  <footer className={styles.footer}>
+    <img src={logoFooter} alt="Kasa logo footer" width={150} height={40} />
+    <p>© 2025 Kasa. Tous droits réservés</p>
+  </footer>
 );
 
 export default Footer;
-

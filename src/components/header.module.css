@@ -1,35 +1,38 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #fff;
-}
-
-.header img {
-    width: 150px;
-    height: auto;
-}
-
-.nav a {
-    margin-left: 1.5rem;
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    border-bottom: 2px solid transparent;
-    /* invisible par défaut */
-    display: inline-block;
-    /* pour pouvoir transformer la ligne si besoin */
-    transform: translateY(-6px);
-    /* remonte légèrement la barre */
+  width: 100%;                 
+  max-width: 85%;           
+  margin: 0 auto;              
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 1rem 2rem;
+  background-color: #fff;
 }
 
 .nav {
-    display: flex;
-    gap: 1.5rem;
+  display: flex;
+  gap: 2rem;                  
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav a:hover {
-    border-bottom-color: #000;
+  border-bottom: 2px solid #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
