@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Banner.css";
+import "./banner.css";
 
-function Banner({ image, title }) {
+function Banner({ image, title, className }) {
   return (
     <div
-      className="banner"
+      className={`banner ${className || ""}`}
       style={{
         backgroundImage: `url(${image})`,
       }}
@@ -15,10 +15,10 @@ function Banner({ image, title }) {
   );
 }
 
-// Vérification des props
 Banner.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  className: PropTypes.string, // optionnelle
 };
 
 export default Banner;

@@ -3,11 +3,11 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./index.css";
-import "./App.css";
+import "./main.css";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import NotFound from "./pages/NotFound";
+import About from "./pages/about/about";
+import NotFound from "./pages/notfound/notFound";
 
 function Main() {
   return (
