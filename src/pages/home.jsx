@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Banner from "../components/banner/banner";
 import Cards from "../components/cards/cards";
 import homeImage from "../assets/imagebanner.png";
@@ -19,11 +20,9 @@ function Home() {
 
       <div className="cards-container">
         {logements.map((logement) => (
-          <Cards
-            key={logement.id}
-            image={logement.cover}
-            title={logement.title}
-          />
+          <Link key={logement.id} to={`/logements/${logement.id}`}>
+            <Cards image={logement.cover} title={logement.title} />
+          </Link>
         ))}
       </div>
     </div>

@@ -1,0 +1,46 @@
+.collapse {
+  margin: 0 auto 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  max-width: 1300px; 
+  width: 100%; 
+}
+
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #FF6060;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.collapse-header h3 {
+  margin: 0;
+  color: white;
+}
+
+.arrow {
+  font-weight: bold;
+  font-size: large;
+  transform: rotate(90deg);   
+  color: white;               
+}
+
+.arrow.open {
+  transform: rotate(-90deg);  
+}
+
+.collapse-content {
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.collapse.open {
+  background-color: #F6F6F673; 
+}
+

@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/about/about";
 import NotFound from "./pages/notfound/notFound";
+import Logements from "./pages/logements/logements";
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="logements/:id" element={<Logements />} />{" "}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -1,0 +1,47 @@
+h1 {
+color: #FF6060;
+font-size: 25px;
+font-weight: lighter;
+}
+
+/* Conteneur principal de la fiche logement */
+.logement-detail {
+  max-width: 1200px;       /* conteneur un peu plus large pour desktop */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Conteneur pour les collapses côte à côte */
+.logement-collapses {
+  display: flex;
+  gap: 20px;       /* espace entre les collapses */
+  flex-wrap: wrap;  /* passe à la ligne si écran trop petit */
+  justify-content: space-between; /* pour bien répartir l’espace */
+}
+
+/* Chaque collapse spécifique Logements */
+.logement-collapse {
+  flex: 1 1 48%;    /* chaque collapse prend ~48% du parent */
+  min-width: 250px; /* pour mobile */
+  max-width: 600px; /* limite largeur sur grand écran */
+  margin-bottom: 20px;
+  box-sizing: border-box; 
+}
+
+/* Contenu du collapse */
+.collapse-content {
+  overflow-wrap: break-word; /* évite que le texte dépasse */
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+  .logement-collapse {
+    flex: 1 1 100%;  /* empile les collapses sur mobile */
+    max-width: 100%;
+  }
+}
+
+
+
