@@ -11,20 +11,38 @@
 
 .nav {
   display: flex;
-  gap: 2rem;                  
+  gap: 3rem;                  
 }
 
 .nav a {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;             
   line-height: 1;
 }
 
 .nav a:hover {
-  border-bottom: 1px solid #000;
+  border-bottom: 1.5px solid #000;
 }
+
+.header .logo {
+  width: 220px;    
+  height: auto;   
+}
+
+@media (max-width: 768px) {
+  .header .logo {
+    width: 120px;  
+  }
+
+  .nav a {
+    font-size: 1rem; 
+  }
+}
+
+
+
 
 
 

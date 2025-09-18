@@ -1,12 +1,20 @@
+/* Conteneur général du collapse */
 .collapse {
   margin: 0 auto 20px;
   border-radius: 5px;
-  overflow: hidden;
   background-color: #fff;
   max-width: 1300px; 
   width: 100%; 
+  overflow: hidden; 
+  transition: background-color 0.3s ease; 
 }
 
+/* Fond gris lorsque ouvert */
+.collapse.open {
+  background-color: #F6F6F673; 
+}
+
+/* Header cliquable */
 .collapse-header {
   display: flex;
   justify-content: space-between;
@@ -23,24 +31,36 @@
   color: white;
 }
 
+/* Flèche */
 .arrow {
   font-weight: bold;
   font-size: large;
+  color: white;
   transform: rotate(90deg);   
-  color: white;               
+  transition: transform 0.6s ease; 
 }
 
 .arrow.open {
   transform: rotate(-90deg);  
 }
 
+/* Wrapper du contenu pour l'animation */
+.collapse-content-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+/* Contenu réel */
 .collapse-content {
   padding: 10px 15px;
   font-size: 0.95rem;
   line-height: 1.4;
 }
 
-.collapse.open {
-  background-color: #F6F6F673; 
+.collapse {
+  width: 100%;  
+  box-sizing: border-box; 
 }
+
 

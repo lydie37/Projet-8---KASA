@@ -1,0 +1,106 @@
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 20px auto;
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
+}
+
+/* Flèches */
+.slideshow .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  height: 150px;
+  background: transparent; /* pas de fond */
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.slideshow .arrow.prev {
+  left: 0;
+  transform: translate(-20%, -50%);
+}
+
+.slideshow .arrow.next {
+  right: 0;
+  transform: translate(20%, -50%);
+}
+
+.slideshow .arrow svg {
+  width: 120px;
+  height: 120px;
+  stroke: white;  /* flèche blanche */
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+}
+
+/* Compteur */
+.slideshow .counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .slideshow-image {
+    height: 400px;
+  }
+  .slideshow .arrow {
+    width: 120px;
+    height: 120px;
+  }
+  .slideshow .arrow svg {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideshow-image {
+    height: 300px;
+  }
+  .slideshow .arrow {
+    width: 80px;
+    height: 80px;
+  }
+  .slideshow .arrow svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+
+
+
+
+
+

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
-import "./Collapse.css";
+import "./collapse.css";
 
 function Collapse({ title, children, className = "" }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,13 +23,12 @@ function Collapse({ title, children, className = "" }) {
         <ArrowBackIosNewRoundedIcon
           className={`arrow ${isOpen ? "open" : ""}`}
           fontSize="large"
-          style={{ transition: "transform 0.6s ease" }}
         />
       </div>
 
       <div
         className="collapse-content-wrapper"
-        style={{ maxHeight: `${height}px`, transition: "max-height 0.6s ease" }}
+        style={{ maxHeight: `${height}px` }}
       >
         <div className="collapse-content" ref={contentRef}>
           {children}

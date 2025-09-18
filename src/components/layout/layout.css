@@ -1,0 +1,18 @@
+.site-wrapper {
+  max-width: 1200px;     /* largeur max du site */
+  margin: 0 auto;        /* centre horizontalement */
+  padding-left: 50px;    /* même padding pour tout le contenu */
+  padding-right: 50px;
+}
+
+.main-container {
+  margin-top: 20px; /* espace après le header */
+}
+
+/* Titres sans marges par défaut */
+h1, h2 {
+  margin: 0;
+}
+
+
+

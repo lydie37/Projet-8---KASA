@@ -1,47 +1,132 @@
-h1 {
-color: #FF6060;
-font-size: 25px;
-font-weight: lighter;
+.logement-info h1 {
+  color: #FF6060;
+  font-size: 30px;
+  font-weight: 500; 
+  margin-left: 100px;
 }
 
-/* Conteneur principal de la fiche logement */
-.logement-detail {
-  max-width: 1200px;       /* conteneur un peu plus large pour desktop */
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
+.logement-location {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 100px;
 }
 
-/* Conteneur pour les collapses côte à côte */
+.logement-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem; 
+  margin-left: 100px; 
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background-color: #FF6060;
+  color: #fff;
+  padding: 0.5rem 1rem; 
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.logement-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 2rem; 
+  margin-bottom: 1rem;
+}
+
+.logement-host-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.logement-host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 40px;
+}
+
+.host-name {
+  font-weight: bold;
+  line-height: 1.2;
+  color: #FF6060;
+}
+
+.logement-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 100px;
+}
+
+.logement-rating .star svg {
+  width: 40px;   
+  height: 40px;
+}
+
+.logement-rating .star.filled path {
+  fill: #FF6060; 
+}
+
+.logement-rating .star path {
+  fill: #E0E0E0; 
+}
+
 .logement-collapses {
   display: flex;
-  gap: 20px;       /* espace entre les collapses */
-  flex-wrap: wrap;  /* passe à la ligne si écran trop petit */
-  justify-content: space-between; /* pour bien répartir l’espace */
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Chaque collapse spécifique Logements */
 .logement-collapse {
-  flex: 1 1 48%;    /* chaque collapse prend ~48% du parent */
-  min-width: 250px; /* pour mobile */
-  max-width: 600px; /* limite largeur sur grand écran */
+  flex: 1 1 48%;        
+  min-width: 250px;
+  max-width: 600px;
   margin-bottom: 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  max-height: 400px;     
+  overflow: hidden;     
 }
 
-/* Contenu du collapse */
 .collapse-content {
-  overflow-wrap: break-word; /* évite que le texte dépasse */
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  line-height: 1.3;      
 }
 
-/* Responsive pour mobile */
+/* ----- Responsive pour mobile ----- */
 @media (max-width: 768px) {
+  .logement-header {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .logement-host-rating {
+    align-items: flex-start; 
+  }
+
   .logement-collapse {
-    flex: 1 1 100%;  /* empile les collapses sur mobile */
+    flex: 1 1 100%;       
     max-width: 100%;
+    max-height: none;     
   }
 }
+
+
+
 
 
 
