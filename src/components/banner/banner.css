@@ -40,14 +40,20 @@
      1px  1px 0 #000;
 }
 
-/* Tablette */
-@media (max-width: 1024px) {
-  .banner { height: 300px; }
-  .banner-title { font-size: 2.5rem; }
-}
 
-/* Mobile */
 @media (max-width: 768px) {
-  .banner { height: 200px; }
-  .banner-title { font-size: 1.8rem; }
+  .banner {
+    padding: 0.8em;         
+    width: 100%;
+    max-width: 250px;
+    max-height: 100px; 
+    margin: 0 auto;   
+    margin-bottom: 20px;
+  }    
+  
+  .banner-title {
+    font-size: 1.2rem; 
+    padding: 1rem;      
+    text-align: left; 
+  }
 }

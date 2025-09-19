@@ -22,7 +22,6 @@ function Collapse({ title, children, className = "" }) {
         <h3>{title}</h3>
         <ArrowBackIosNewRoundedIcon
           className={`arrow ${isOpen ? "open" : ""}`}
-          fontSize="large"
         />
       </div>
 

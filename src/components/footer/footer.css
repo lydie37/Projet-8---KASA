@@ -11,3 +11,16 @@
   font-size: 0.9rem;
 }
 
+@media (max-width: 768px) {
+.footer {
+  width: 100%;       
+  max-width: 100%;   
+  margin: 0;         
+  padding: 1rem;    
+  }
+
+main {
+  padding: 0;        
+  }
+}
+

@@ -57,3 +57,24 @@
   background-color: #F6F6F6;  
   border-radius: 25px;        
 }
+
+@media (max-width: 768px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 card par ligne */
+    background-color: transparent;
+    gap: 1rem;                  /* réduit l’espace entre les cards */
+    padding: 0 1rem;            /* optionnel : un petit padding sur les côtés */
+  }
+
+  .card {              
+    padding: 0.8em;         /* réduit le padding pour mobile */
+    box-shadow: none;           /* optionnel : supprime l’ombre */
+    background-color: transparent; /* optionnel : fond transparent sur mobile */
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px; /* limite la largeur des cards sur mobile */
+    margin: 0 auto;   /* centre la card */
+    margin-bottom: 20px;
+  }
+}
