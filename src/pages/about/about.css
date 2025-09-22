@@ -1,6 +1,43 @@
-
 .about-banner .banner-title {
-  display: none; /* cache le texte sur la bannière */
+  display: none; 
 }
 
+@media (max-width: 768px) {
 
+.about-banner {
+  width: 90%;          
+  max-width: none;     
+  margin: 0 auto 20px; 
+  padding: 0;
+  display: block;
+}
+
+.about-banner img {
+  width: 100%;        
+  height: auto;
+  display: block;
+}
+
+  
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;       
+  box-sizing: border-box;
+}
+
+.about-collapse {
+  width: 90%;          
+  margin: 0 auto;        
+  box-sizing: border-box;
+}
+
+.about-collapse p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+}
