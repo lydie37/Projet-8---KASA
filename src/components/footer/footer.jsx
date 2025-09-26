@@ -1,10 +1,10 @@
-import "./footer.css"; // CSS global
+import "./footer.css"; 
 import logoFooter from "../../assets/logofooter.svg";
 
 const Footer = () => (
   <footer className="footer">
-    <img src={logoFooter} alt="Kasa logo footer" width={150} height={40} />
-    <p>© 2025 Kasa. Tous droits réservés</p>
+    <img src={logoFooter} alt="Kasa logo footer"/>
+    <p>© 2020 Kasa. All rights reserved</p>
   </footer>
 );
 

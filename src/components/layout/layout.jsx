@@ -5,7 +5,7 @@ import "./layout.css";
 
 const Layout = () => (
   <div className="site-wrapper">
-    <Header /> {/* le header est dans le wrapper */}
+    <Header />
     <main className="main-container">
       <Outlet />
     </main>

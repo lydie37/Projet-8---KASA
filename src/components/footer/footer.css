@@ -17,10 +17,17 @@
   font-size: 0.9rem;
 }
 
+.footer img {
+  width: 150px; 
+  height: auto; 
+  margin-bottom: 1rem; 
+}
+
 @media (max-width: 768px) {
-.footer {
-  padding: 1rem;          
+  .footer img {
+    width: 100px; 
+  }
 }
-}
+
 
 
