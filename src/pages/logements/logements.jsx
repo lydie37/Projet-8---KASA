@@ -10,14 +10,14 @@ function Logements() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/properties")
+    setLoading(true);
+    fetch(`http://localhost:8080/api/properties/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Erreur lors de la récupération");
         return res.json();
       })
       .then((data) => {
-        const found = data.find((l) => String(l.id) === id);
-        setLogement(found || null);
+        setLogement(data || null);
         setLoading(false);
       })
       .catch(() => {
@@ -45,7 +45,9 @@ function Logements() {
           <p className="logement-location">{logement.location}</p>
           <div className="logement-tags">
             {logement.tags?.map((tag, i) => (
-              <span key={i} className="tag">{tag}</span>
+              <span key={i} className="tag">
+                {tag}
+              </span>
             ))}
           </div>
         </div>
@@ -89,16 +91,15 @@ function Logements() {
         </Collapse>
 
         <Collapse title="Équipements" className="logement-collapse">
-          <p>
-            {logement.equipments?.length > 0
-              ? logement.equipments.map((eq, i) => (
-                  <span key={i}>
-                    {eq}
-                    <br />
-                  </span>
-                ))
-              : "Aucun équipement disponible"}
-          </p>
+          {logement.equipments?.length ? (
+            <ul>
+              {logement.equipments.map((eq, i) => (
+                <li key={i}>{eq}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>Aucun équipement disponible</p>
+          )}
         </Collapse>
       </div>
     </div>
@@ -106,4 +107,3 @@ function Logements() {
 }
 
 export default Logements;
-

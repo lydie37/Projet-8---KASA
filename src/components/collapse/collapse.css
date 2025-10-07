@@ -77,33 +77,39 @@ main {
 }
 
 .collapse {
-  max-width: 90%;
-  margin: 0 auto 15px;
+    width: 100%;         
+    max-width: none;   
+    margin: 0 0 15px -10px;  
+  }
+
+.collapse-header h3 {
+  font-size: 0.8rem;    
 }
 
-  .collapse-header h3 {
-    font-size: 0.8rem;    
-  }
+.collapse-header {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
 
-  .collapse-header {
-    padding: 6px 10px;
-    font-size: 0.9rem;
-  }
+.collapse-header {
+  padding: 6px 10px;     
+  font-size: 0.6rem;     
+}
 
-  .collapse-header {
-    padding: 6px 10px;     
-    font-size: 0.6rem;     
-  }
-
-    .collapse-content p {
-    font-size: 0.75rem;   
-  }
+.collapse-content p {
+  font-size: 0.75rem;   
+}
 
 .arrow svg {
   width: 1rem;
   height: 1rem;
 }
 }
+
+
+
+
+
 
 
 
